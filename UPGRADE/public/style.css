@@ -106,7 +106,7 @@ section.game { grid-area: game; }
 }
 
 .mini-info {
-  position: absolute; left 8px; right: 8px; bottom: 8px;
+  position: absolute; left: 8px; right: 8px; bottom: 8px;
   padding: 6px 8px;
   font-size: .82rem; font-weight: 700;
   background: rgba(12,18,32,.75);
