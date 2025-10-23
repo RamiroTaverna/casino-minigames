@@ -1,0 +1,62 @@
+{
+  "siteInventory": [
+    {
+      "id": "s-galil-ff",
+      "name": "Firefight",
+      "weapon": "Galil AR",
+      "rarity": "MW",
+      "price": 0.41,
+      "img": "https://dummyimage.com/600x300/222/eee&text=Galil+AR+Firefight"
+    },
+    {
+      "id": "s-awp-pocket",
+      "name": "Pocket AWP",
+      "weapon": "Charm",
+      "rarity": "WW",
+      "price": 0.41,
+      "img": "https://dummyimage.com/600x300/222/eee&text=Pocket+AWP+Charm"
+    },
+    {
+      "id": "s-nova-caged",
+      "name": "Caged Steel",
+      "weapon": "Nova",
+      "rarity": "MW",
+      "price": 0.41,
+      "img": "https://dummyimage.com/600x300/222/eee&text=Nova+Caged+Steel"
+    },
+    {
+      "id": "s-bizon-jungle",
+      "name": "Jungle Slipstream",
+      "weapon": "PP-Bizon",
+      "rarity": "ST WW",
+      "price": 0.41,
+      "img": "https://dummyimage.com/600x300/222/eee&text=PP-Bizon+Jungle"
+    },
+    {
+      "id": "s-glock-death",
+      "name": "Death Rattle",
+      "weapon": "Glock-18",
+      "rarity": "FT",
+      "price": 0.2,
+      "img": "https://dummyimage.com/600x300/222/eee&text=Glock-18+Death+Rattle"
+    }
+  ],
+  "userInventory": [
+    {
+      "id": "u-aug-condemned",
+      "name": "Condemned",
+      "weapon": "AUG",
+      "rarity": "FT",
+      "price": 0.85,
+      "img": "https://dummyimage.com/600x300/222/eee&text=AUG+Condemned"
+    },
+    {
+      "id": "u-glock-death",
+      "name": "Death Rattle",
+      "weapon": "Glock-18",
+      "rarity": "FT",
+      "price": 0.2,
+      "img": "https://dummyimage.com/600x300/222/eee&text=Glock-18+Death+Rattle"
+    }
+  ]
+}

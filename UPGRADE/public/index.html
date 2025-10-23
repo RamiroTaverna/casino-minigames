@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Upgrade — Demo</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <audio id="spinSound" src="/sounds/spinn.mp3" preload="auto"></audio>\n  <audio id="spinWinSound" src="/sounds/spin-win.mp3" preload="auto"></audio>
+  <div class="app">
+    <center>
+    <header>
+      <h1>Upgrade — Demo</h1>
+      <div class="credits">HTML/CSS/JS + Node + Socket.IO</div>
+      <div class="sound-toggle">
+        <label for="sound-checkbox">Sound</label>
+        <input type="checkbox" id="sound-checkbox" checked>
+      </div>
+    </header>
+</center>
+<main class="layout">
+  <!-- Rail izquierdo: seleccionados del usuario -->
+  <section class="panel rail rail-left">
+    <h3 class="rail-title">Tus artículos (apuesta)</h3>
+    <div id="selectedUserList" class="selected-list tall"></div>
+  </section>
+
+  <!-- Rueda central -->
+  <section class="game panel">
+    <div class="wheel-wrapper">
+      <svg id="wheel" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="83" class="ring-deco"/>
+        <circle cx="100" cy="100" r="90" class="ring-bg"/>
+        <circle id="ringProgress" cx="100" cy="100" r="90" class="ring" pathLength="100"/>
+      </svg>
+
+      <div class="center">
+        <div id="chanceText">0%</div>
+      </div>
+      <div class="center-depth"></div>
+
+      <!-- PIVOT que rota (solo contiene la flecha) -->
+      <div class="arrow-pivot" id="arrowPivot"><div class="arrow" id="arrow"></div></div>
+      <!-- HUB estático (siempre en el centro) -->
+      <div class="arrow-hub"></div>
+
+    </div>
+
+    <button id="spinBtn" type="button" disabled>SPIN</button>
+    <div id="result" class="result"></div>
+  </section>
+
+  <!-- Rail derecho: seleccionados del sitio -->
+  <section class="panel rail rail-right">
+    <h3 class="rail-title">Artículos objetivo (de la página)</h3>
+    <div id="selectedSiteList" class="selected-list tall"></div>
+  </section>
+
+  <!-- Inventario completo del usuario (abajo, a la izquierda y centro) -->
+  <section class="inventory panel" id="userPanel">
+    <h2>Tus artículos</h2>
+    <div id="userInventory" class="grid"></div>
+  </section>
+
+  <!-- Inventario completo del sitio (abajo, a la derecha) -->
+  <section class="inventory panel" id="sitePanel">
+    <h2>Inventario de la página</h2>
+    <div id="siteInventory" class="grid"></div>
+  </section>
+</main>
+
+  </div>
+
+  <!-- Cargar Socket.IO del servidor local -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
+</html>
